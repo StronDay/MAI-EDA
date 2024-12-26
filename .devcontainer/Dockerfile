@@ -1,6 +1,8 @@
-FROM python:3
+FROM python:3.10-slim
 
 RUN pip install --upgrade pip 
+
+
 
 COPY ./.devcontainer/requirements.txt /tmp/requirements.txt
 
